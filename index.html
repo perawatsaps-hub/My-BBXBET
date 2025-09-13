@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>โฮมเพจ | เว็บไซต์ของฉัน</title>
+  <meta name="description" content="โพรไฟล์/ผลงานแบบเรียบง่าย โหลดไว ปรับแต่งได้เอง" />
+  <meta property="og:title" content="เว็บไซต์ของฉัน" />
+  <meta property="og:description" content="โพรไฟล์/ผลงานแบบเรียบง่าย โหลดไว ปรับแต่งได้เอง" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com" />
+  <meta property="og:image" content="assets/cover.png" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="container">
+    <a class="brand" href="./">
+      <img src="assets/favicon.svg" alt="โลโก้" width="32" height="32">
+      <span>เว็บไซต์ของฉัน</span>
+    </a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    <nav id="nav">
+      <a href="./">หน้าแรก</a>
+      <a href="about.html">เกี่ยวกับ</a>
+      <a href="#contact">ติดต่อ</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>สวัสดี 👋<br>นี่คือเว็บไซต์ของคุณ</h1>
+        <p>เทมเพลตเว็บแบบ Static โหลดไว SEO พร้อม เบาและแก้ไขง่าย — เหมาะสำหรับหน้าโปรไฟล์ ร้านเล็กๆ หรือ Landing Page</p>
+        <div class="cta">
+          <a class="btn primary" href="#contact">เริ่มติดต่อ</a>
+          <a class="btn" href="about.html">อ่านเกี่ยวกับเรา</a>
+        </div>
+      </div>
+      <div class="hero-art">
+        <img src="assets/hero-placeholder.svg" alt="ภาพประกอบ" />
+      </div>
+    </section>
+
+    <section class="features container">
+      <h2>จุดเด่น</h2>
+      <div class="grid">
+        <article>
+          <h3>โหลดไว</h3>
+          <p>ไม่มีเฟรมเวิร์กหนักๆ ใช้ HTML/CSS/JS ล้วนๆ</p>
+        </article>
+        <article>
+          <h3>แก้เองง่าย</h3>
+          <p>เปิดไฟล์แล้วพิมพ์เนื้อหาที่ต้องการได้เลย</p>
+        </article>
+        <article>
+          <h3>รองรับมือถือ</h3>
+          <p>ดีไซน์ Responsive ดูสวยทั้งมือถือและเดสก์ท็อป</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery container">
+      <h2>ผลงาน/สินค้า</h2>
+      <div class="grid cards">
+        <figure><img src="assets/placeholder.png" alt="ตัวอย่าง 1"><figcaption>ตัวอย่าง #1</figcaption></figure>
+        <figure><img src="assets/placeholder.png" alt="ตัวอย่าง 2"><figcaption>ตัวอย่าง #2</figcaption></figure>
+        <figure><img src="assets/placeholder.png" alt="ตัวอย่าง 3"><figcaption>ตัวอย่าง #3</figcaption></figure>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>ติดต่อ</h2>
+      <p>กรอกฟอร์มหรืออีเมลหาเราได้เลย</p>
+      <form class="card" action="https://formspree.io/f/example" method="POST">
+        <label>อีเมลของคุณ
+          <input type="email" name="email" required placeholder="you@example.com">
+        </label>
+        <label>ข้อความ
+          <textarea name="message" rows="5" required placeholder="อยากให้ช่วยอะไรบอกเราได้เลย"></textarea>
+        </label>
+        <button class="btn primary" type="submit">ส่งข้อความ</button>
+      </form>
+      <p class="muted">* เปลี่ยน action ของฟอร์มเป็นบริการที่คุณใช้ หรือใช้ mailto:คุณ@โดเมน.com</p>
+    </section>
+  </main>
+
+  <footer class="container">
+    <p>© <span id="year"></span> เว็บไซต์ของฉัน • สร้างด้วยความตั้งใจ 💙</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
